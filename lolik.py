@@ -40,16 +40,16 @@ FPS = 60
 finish = False
 clock = time.Clock()
 
-racket1 = Player('roketkik.png', 30, 200, 50, 100, 30)
-racket2 = Player('roketkik.png', 520, 200, 50, 100, 30)
+racket1 = Player('roketkik.png', 30, 200, 50, 100, 5)
+racket2 = Player('roketkik.png', 520, 200, 50, 100, 5)
 ball = GameSprite('34.png', 200, 200, 50, 50, 50)
 
 
 
 font.init()
 font = font.Font(None, 35)
-lose1 = font.render('PLAYER 1 LOSE!', True, (180, 0, 0))
-lose2 = font.render('PLAYER 2 LOSE!', True, (180, 0, 0))
+lose1 = font.render('ИГРОК 1 ПОПУСК!', True, (180, 0, 0))
+lose2 = font.render('ИГРОК 2 ПОПУСК!', True, (180, 0, 0))
 
 speed_x = 3
 speed_y = 3
@@ -94,4 +94,7 @@ while run:
 
 
 
+
+
+    
 
